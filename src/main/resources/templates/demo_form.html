@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>demo(form)</title>
+</head>
+<body>
+
+	<form th:action="@{/demo/form}" th:object="${sampleForm}" method="POST">
+		<div>
+			<label>ID</label>
+			<input type="text" th:field="*{infoId}" />
+		</div>
+		<div>
+			<label>NAME</label>
+			<input type="text" th:field="*{infoName}" />
+		</div>
+ 		<button type="submit" >確定</button>
+	</form>
+
+</body>
+</html>
